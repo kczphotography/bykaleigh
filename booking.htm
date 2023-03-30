@@ -59,11 +59,15 @@ Author: Kaleigh Ziglar
             <!--- Form on BOOKING page --->
             <div id = "formlayout">
                 <form action="https://formsubmit.co/kczphotographybykaleigh@gmail.com" method="POST">
-        
+                    <!-- will filter out spam/bots-->
+                    <input name="_formsubmit_id" type="text" style="display:none">
+                    <input type="hidden" name = "_captcha" value= "false">
+                
+                    <input type="text" name="name" id = "name" required placeholder= "YOUR NAME"><br>
+                    <input type="email" name="email" id = "emailaddress" requried placeholder="EMAIL ADDRESS"><br>
+                    <input type="number" name="number" id = "phonenumber" required placeholder="PHONE NUMBER">
                   
-                    <input type="text" id = "name" required placeholder= "YOUR NAME"><br>
-                    <input type="email" id = "emailaddress" requried placeholder="EMAIL ADDRESS"><br>
-                    <input type="number"id = "phonenumber" required placeholder="PHONE NUMBER">
+          
                     <fieldset>
                     <legend><br> session type   </legend><br>
                         <input type= "radio" name = "1" value = "portraits"> PORTRAITS<br>
