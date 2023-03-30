@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+********************************************
+Title: KCZ Photography Home Page
+Author: Kaleigh Ziglar
+********************************************
+-->
+<html land="en-US">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="main.css">
+        <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+         <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+         <!---Linking font-awsome icon css --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <!---adding navigation menu 5b.--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul id = "nav">
+                <li> <a href="index.htm"> HOME </a></li>
+                <li> <a href="about.htm"> THE PHOTOGRAPHER</a></li>
+                <li> <a href="rates.htm"> PORFOLIO </a></li>
+                <li> <a href="gallery.htm"> PRICING </a></li>
+                <li> <a href="contact.htm"> BOOKING </a></li>
+            </ul>
+        </nav>
+        
+    </body>
+</html>
+

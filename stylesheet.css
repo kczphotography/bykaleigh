@@ -1,0 +1,278 @@
+/* Navigation Menu Bar */
+html
+{
+    background-color: rgb(248, 246, 241);
+}
+#nav_menu 
+{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+}
+#nav_menu ul 
+{
+    text-align: center;
+    background-color:rgb(217, 161, 135);
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Urbanist', sans-serif;
+}
+    
+#nav_menu ul li 
+{
+    display:inline-flex;
+    padding-right:30px;
+    padding-left:30px; 
+}
+
+#nav_menu ul li a
+{   text-align: center;
+    display: block;
+    padding: .25em;
+    color:white;
+    text-decoration: none;
+}
+
+#nav_menu ul li a:hover
+{
+    color:rgb(147, 71, 44);
+}
+.header_container
+{
+    position: block;
+    text-align: center;
+    color: white;
+}
+.headertext
+{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 700%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.photo_banner
+{
+    width:100%;
+}
+#banner 
+{
+    padding: .66em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#socialmedia 
+{
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 180%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+#socialmedia a 
+{
+
+    text-align: center;
+    display: inline-block;
+    color: rgb(147, 71, 44);
+    padding: 1em;
+    font-size: 60%;
+}
+
+/* INDEX Page */
+.KCZPHOTOGRAPHY
+{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 300%;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BOOKING Page */
+
+#formlayout
+{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-size: 200%;
+}
+
+input
+{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 80%;
+    padding: .5em;
+    display: block;
+    line-height: 1;
+    text-align: center; 
+}
+
+legend
+{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5em;
+    font-family: 'Qwitcher Grypen', cursive;
+    width: 100%;
+}
+
+::placeholder
+{
+    color:rgb(183, 165, 149);
+}
+fieldset
+{  
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    line-height: 1; 
+    border: none;
+    background-color: white;
+    color:rgb(183, 165, 149);
+    font-size: 80%;
+}
+fieldset input
+{
+    width: 30%;
+    display: inline-block;
+}
+
+#message
+{
+    height: 10em;
+    width: 70%;
+    text-align: center;
+    font-size: 80%;
+    margin-bottom: 10%;
+}
+#sendmessage
+{
+    display: block;
+    border-radius: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: rgb(217, 161, 135);
+    background-color: rgb(217, 161, 135);
+    color: white; 
+    padding:.25em;
+    font-size: 150%;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+
+/*Thank You Page*/
+
+.thankyou
+{
+    text-align: center;
+    font-size: 200%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+/* Responsive Page Layout */
+
+/* SMALL*/
+@media only screen and (max-width: 767px)
+{
+    
+    #nav_menu       {display:none;}
+    #mobile_menu    {display: block;}
+       
+    .slicknav_menu 
+    {   display:flex;
+        background-color: rgb(217, 161, 135);
+        color: white;
+        font-family: bold;
+        font-size: 1em;
+    }
+    
+    #mobile_menu li a 
+    {
+        font-size: .75em;
+        color: rgb(147, 71, 44);
+    }
+    .letsgettalking
+    {
+        font-size: 350%;
+    }
+   
+    #formlayout
+    {
+        width: 100%;
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 150%;
+        display: block;
+    }
+   
+    input
+    {
+        line-height:1;
+        width: 80%;
+        float: none;
+        padding: .5em;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        
+    }
+    legend
+    {
+        width: 90%;
+        font-size: 120%;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+    fieldset
+    {
+        width: 80%;
+        font-size: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+   
+    #message
+    {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+    #sendmessage
+    {
+        height: 60px;
+        width:60px;
+        font-size: 70%;
+    }
+    #banner 
+    {
+        padding: .15em;
+    }
+    
+}
+/* LARGE */
+@media only screen and (min-width: 768px)
+{
+    #nav_menu       {display:block;}
+    
+    #mobile_menu    {display: none;}
+    
+    .slicknav_menu  {display: none;}
+}
