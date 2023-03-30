@@ -58,28 +58,21 @@ Author: Kaleigh Ziglar
         
             <!--- Form on BOOKING page --->
             <div id = "formlayout">
-                 <form target="_blank" 
-                      action="https://formsubmit.co/kczphotographybykaleigh@gmail.com" method="POST">
-                    
-                    <!-- will filter out spam/bots-->
-                    <input name="_formsubmit_id" type="text" style="display:none">
-                    <input type="hidden" name = "_captcha" value= "false">
-                    
-                    <input required autofocus type = "text" id = "name" minlength = "1" placeholder= "YOUR NAME"><br>
-
-                    <input required type= "email" id = "emailaddress" minlength = "5" placeholder="EMAIL ADDRESS"><br>
-            
-                    <input required type= "tel" id = "phonenumber" minlength = "10" maxlength="25" pattern = "[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="PHONE NUMBER">
-
+                <form action="https://formsubmit.co/kczphotographybykaleigh@gmail.com" method="POST">
+        
+                  
+                    <input type="text" id = "name" required placeholder= "YOUR NAME"><br>
+                    <input type="email" id = "emailaddress" requried placeholder="EMAIL ADDRESS"><br>
+                    <input type="number"id = "phonenumber" required placeholder="PHONE NUMBER">
                     <fieldset>
-                    <legend><br><br> session type   </legend><br>
+                    <legend><br> session type   </legend><br>
                         <input type= "radio" name = "1" value = "portraits"> PORTRAITS<br>
                         <input type= "radio" name = "2" value = "group"> GROUP<br>
                         <input type= "radio" name = "3" value = "newborn/toddler"> NEWBORN/TODDLER<br>
                         <input type= "radio" name = "4" value = "elopments"> ELOPEMENTS <br><br>
                     </fieldset><br>
             
-                    <input required autofocus type = "text" id = "howdidyoufindme" minlength = "1" placeholder= "HOW DID YOU FIND ME"><br>
+                    <input type="text" name="howdidyoufindme" id = "howdidyoufindme" required placeholder= "HOW DID YOU FIND ME"><br>
         
                     <input type = "text" id = "message"   placeholder="LEAVE YOUR MESSAGE HERE!">    
                     <button id="sendmessage" type="submit" onclick= "document.location.href= 'thankyou.htm';"> send message!</button>
