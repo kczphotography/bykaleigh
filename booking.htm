@@ -49,11 +49,11 @@ Author: Kaleigh Ziglar
                 <li> <a href="pricing.htm"> PRICING </a></li>
                 <li> <a href="booking.htm"> BOOKING </a></li>
             </ul>
-        </nav><br><br><br><br><br>
+        </nav><br><br><br><br>
         
         <div class = "header_container">
-            <img src = "img/header/booking_image.jpg" style="width:100%;">
             <div class = "headertext">let's get talking!</div>
+            <img src = "img/header/booking_image.jpg" style="width:100%;">
         </div><br>
         
             <!--- Form on BOOKING page --->
@@ -63,11 +63,11 @@ Author: Kaleigh Ziglar
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
                     
-                    <input type="hidden" name="_next" value="https://kczphotography.github.io/bykaleigh.github.io/thankyou.htm">
+                    <input required type="hidden" name="_next" value="https://kczphotography.github.io/bykaleigh.github.io/thankyou.htm">
                   
-                    <input type="text" name="name" id = "name" required placeholder= "YOUR NAME"><br>
-                    <input type="email" name="email" id = "emailaddress" requried placeholder="EMAIL ADDRESS"><br>
-                    <input type="number" name="number" id = "phonenumber" required placeholder="PHONE NUMBER">
+                    <input required type="text" name="name" id = "name" placeholder= "YOUR NAME"><br>
+                    <input required type="email" name="email" id = "emailaddress" placeholder="EMAIL ADDRESS"><br>
+                    <input required type="number" name="number" id = "phonenumber" minlength = "10" maxlength="25" placeholder="PHONE NUMBER">
                     <fieldset>
                     <legend><br> session type   </legend><br>
                         <input type= "radio" name = "1" value = "portraits"> PORTRAITS<br>
@@ -76,10 +76,10 @@ Author: Kaleigh Ziglar
                         <input type= "radio" name = "4" value = "elopments"> ELOPEMENTS <br><br>
                     </fieldset><br>
             
-                    <input type="text" name="howdidyoufindme" id = "howdidyoufindme" required placeholder= "HOW DID YOU FIND ME"><br>
+                    <input required type="text" name="howdidyoufindme" id = "howdidyoufindme"  placeholder= "HOW DID YOU FIND ME?"><br>
         
-                    <input type = "text" name="message" id = "message" placeholder="LEAVE YOUR MESSAGE HERE!">    
-                    <button id="sendmessage" type="submit" onclick= "document.location.href= 'thankyou.htm';"> send message!</button>
+                    <input required type = "text" name="message" id = "message" placeholder="LEAVE YOUR MESSAGE HERE!">    
+                    <button id="sendmessage" type="submit" onclick= "document.location.href= 'thankyou.htm';">send message!</button>
                 </form>
             </div><br><br>
             
