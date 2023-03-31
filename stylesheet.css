@@ -1,7 +1,9 @@
 /* Navigation Menu Bar */
 html
 {
+   
     background-color: rgb(248, 246, 241);
+
 }
 #nav_menu 
 {
@@ -91,7 +93,7 @@ html
     position: absolute;
     top: 64%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
 }
 
 /* BOOKING Page */
@@ -190,24 +192,30 @@ fieldset input
 {
     
     #nav_menu       {display:none;}
-    #mobile_menu    {display: block;}
-       
+    
     .slicknav_menu 
-    {   display:flex;
-        background-color: rgb(217, 161, 135);
-        color: white;
-        font-family: bold;
+    {   display:block;
         font-size: 1em;
+        
     }
     
     #mobile_menu li a 
     {
         font-size: .75em;
-        color: rgb(147, 71, 44);
+        color: white;
+        font-family: 'Urbanist', sans-serif;
     }
-    .letsgettalking
+    .headertext
     {
-        font-size: 350%;
+        position: block;
+        font-size: 250%;
+        top: 25%;
+    
+    }
+    .KCZPHOTOGRAPHY
+    {
+        font-size: 130%;  
+        top: 28%;
     }
    
     #formlayout
@@ -228,9 +236,9 @@ fieldset input
         padding: .5em;
         margin-right: auto;
         margin-left: auto;
-        text-align: center;
-        
+        text-align: center;   
     }
+    
     legend
     {
         width: 90%;
@@ -239,10 +247,11 @@ fieldset input
         margin-left: auto;
         float: none;
     }
+    
     fieldset
     {
         width: 80%;
-        font-size: 100%;
+        font-size: 80%;
         margin-left: auto;
         margin-right: auto;
         float: none;
@@ -255,16 +264,9 @@ fieldset input
         margin-left: auto;
         float: none;
     }
-    #sendmessage
-    {
-        height: 60px;
-        width:60px;
-        font-size: 70%;
-    }
-    #banner 
-    {
-        padding: .15em;
-    }
+    #sendmessage    {font-size: 70%;}
+    
+    #banner         {padding: .1em;}
     
 }
 /* LARGE */
