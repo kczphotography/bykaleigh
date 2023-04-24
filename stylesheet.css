@@ -362,7 +362,7 @@ legend
     display: block;
     margin-right: auto;
     margin-left: auto;
-    font-size: 250%;
+    font-size: 210%;
     font-family: 'Qwitcher Grypen', cursive;
     width: 100%;
     color: rgb(147, 71, 44);
@@ -382,7 +382,7 @@ fieldset
     border: none;
     background-color: white;
     color:rgb(183, 165, 149);
-    font-size: 140%;
+    font-size: 120%;
     font-family: 'Amatic SC', cursive;
 }
 fieldset input
