@@ -127,14 +127,11 @@ p
     margin-right: auto;
     margin-left: auto;
 }
-.photo_banner img
+#banner
 {
-    width: 19%;
-    
+    width: 20%;
+    padding: .66em;   
 }
-
-#banner     {padding: .66em;}
-
 #socialmedia 
 {
     margin-left:auto;
