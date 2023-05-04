@@ -5,22 +5,22 @@ Title: KCZ Photography THE PHOTOGRAPHER Page
 Author: Kaleigh Ziglar
 ********************************************
 -->
-<html land="en-US">
+<html land="en">
     
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> THE PHOTOGRAPHER</title>
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" href="stylesheet.css">
-        
         <!---adding in the viewport for responsive webpage design--->
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="stylesheet.css">
+        
         
         <!-- adding in Google fonts--->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,55 +29,56 @@ Author: Kaleigh Ziglar
         <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Urbanist:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Urbanist:wght@200&display=swap" rel="stylesheet">
 
-        
-        
+        <!-- adding in social media icons--->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     </head>
     <body style ="background-color: rgb(241, 239, 233);">
     
-        <!-- adding in TopNav menu bar-->
-        <div class="topnav" id="myTopnav">
-              <a href="index.htm" class="active">HOME</a>
-              <a href="thephotographer.htm"> THE   PHOTOGRAPHER</a>
-              <div class="dropdown">
-                <button class="dropbtn">PORTFOLIO
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="portrait.htm">PORTRAIT</a>
-                  <a href="couple.htm"> COUPLE</a>
-                  <a href="groupfamily.htm">GROUP & FAMILY</a>
-                  <a href="newborntoddler.htm">NEWBORN & TODDLER</a>
-                  <a href="engagementelopement.htm">ENGAGEMENT & ELOPEMENT</a>
-                </div>
-              </div>
-              <a href="pricing.htm">PRICING</a>
-              <a href="booking.htm">BOOKING</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        <script>
-            function myFunction() {
-            var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-            }
-            }
-        </script><br><br>
-        
-            <div class = "intro">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-background">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav justify-content-between w-100">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.htm">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="thephotographer.htm">THE PHOTOGRAPHER</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PORTFOLIO
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="portrait.htm">PORTRAIT</a></li>
+                    <li><a class="dropdown-item" href="couple.htm">COUPLE</a></li>
+                    <li><a class="dropdown-item" href="groupfamily.htm">GROUP / FAMILY</a></li>
+                    <li><a class="dropdown-item" href="newborntoddler.htm">NEWBORN / TODDLER</a></li>
+                    <li><a class="dropdown-item" href="engagementelopement.htm">ENGAGEMENT / ELOPEMENT</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.htm">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="booking.htm">BOOKING</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
             <div class = "paragraph">
                 <p id ="intro_1"> HEY THERE !   MY NAME IS </p>
                 <p id="intro_2"> Kaleigh </p><br>
                 <p id ="intro_3">I am a self-taught photographer who decided to pick up a camera almost one year ago. My photography journey started out as a creative outlet while I got my degree in computer science. I quickly found my passion for photography, it's beauty, and the ability to give people precious moments frozen in time. This past year has been thrilling as I checked off many of my "photography-firsts". I have already learned and grown so much and I can't wait to see where this goes!</p>
 
             </div>
-            
-            <!---the photographer carousel--->
+        <!---the photographer carousel--->
            <div class = "photographer_carousel">
-                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
 
                   <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -98,27 +99,27 @@ Author: Kaleigh Ziglar
                   </div>
                 </div>       
             </div>
-            </div>
-      
+         
         
         <!---fact bar--->
         <div class = "photographer_facts">
             <ul>
-                <li> 1. nature lover</li>
-                <li> 2. pitbull momma of two</li>
-                <li> 3. coffee-holic</li>
-                <li> 4. DIY enthusiast</li>
+                <li id = "facts"> 1. nature lover</li>
+                <li id = "facts"> 2. pitbull momma of two</li>
+                <li id = "facts"> 3. coffee-holic</li>
+                <li id = "facts"> 4. DIY enthusiast</li>
             </ul>
         </div>
+    
 
         <button id="booking_button" type="submit" onclick= "document.location.href= 'booking.htm';"> say hello!</button>
         
-            <div class = "photo_banner">
-                <img id = "banner" src = "img/banner/banner1.jpg" >
-                <img id = "banner" src = "img/banner/banner2.JPEG" >
-                <img id = "banner" src = "img/banner/banner3.jpg" >
-                <img id = "banner" src = "img/banner/banner4.jpg" >
-                <img id = "banner" src = "img/banner/banner5.jpg">
+            <div class = "photo_banner justify-content-between w-100">
+                <img id = "banner" src = "img/banner/banner1.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner2.JPEG" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner3.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner4.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner5.jpg" style="width:20%;">
             </div>
         
             <!-- end of every page - watermark and social media --->
@@ -127,6 +128,10 @@ Author: Kaleigh Ziglar
                 <a href = "https://www.facebook.com/profile.php?id=100087718065481" class = "fa fa-facebook"> <br>  facebook  </a>
                 <a href = "https://www.instagram.com/kczphotographybykaleigh/" class = "fa fa-instagram"> <br>   instagram   </a>
             </div>
+        
+         <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
     </body>
 </html>
