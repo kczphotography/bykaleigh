@@ -12,16 +12,14 @@ Author: Kaleigh Ziglar
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> PORTRAIT PORTFOLIO </title>
         
+       <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
         <link rel="stylesheet" href="stylesheet.css">
         
-        <!---adding in the viewport for responsive webpage design--->
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-       
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-       
-       <!--Bootstrap JS --> 
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         
         <!-- adding in Google fonts--->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,43 +27,47 @@ Author: Kaleigh Ziglar
         <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Urbanist:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Urbanist:wght@200&display=swap" rel="stylesheet">
-        
+
         <!-- adding in social media icons--->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     </head>
     <body style ="background-color: rgb(241, 239, 233);">
         
-        <!-- adding in TopNav menu bar-->
-        <div class="topnav" id="myTopnav">
-              <a href="index.htm" class="active">HOME</a>
-              <a href="thephotographer.htm"> THE   PHOTOGRAPHER</a>
-              <div class="dropdown">
-                <button class="dropbtn">PORTFOLIO
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="portrait.htm">PORTRAIT</a>
-                  <a href="couple.htm"> COUPLE</a>
-                  <a href="groupfamily.htm">GROUP & FAMILY</a>
-                  <a href="newborntoddler.htm">NEWBORN & TODDLER</a>
-                  <a href="engagementelopement.htm">ENGAGEMENT & ELOPEMENT</a>
-                </div>
-              </div>
-              <a href="pricing.htm">PRICING</a>
-              <a href="booking.htm">BOOKING</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        <script>
-            function myFunction() {
-            var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-            }
-            }
-        </script>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-background">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav justify-content-between w-100">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.htm">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="thephotographer.htm">THE PHOTOGRAPHER</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PORTFOLIO
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="portrait.htm">PORTRAIT</a></li>
+                    <li><a class="dropdown-item" href="couple.htm">COUPLE</a></li>
+                    <li><a class="dropdown-item" href="groupfamily.htm">GROUP / FAMILY</a></li>
+                    <li><a class="dropdown-item" href="newborntoddler.htm">NEWBORN / TODDLER</a></li>
+                    <li><a class="dropdown-item" href="engagementelopement.htm">ENGAGEMENT / ELOPEMENT</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.htm">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="booking.htm">BOOKING</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         
         <div class = "header_container">
             <div class = "headertext"> portrait portfolio </div><br>
@@ -165,15 +167,15 @@ Author: Kaleigh Ziglar
         </div>
         <!-- Gallery -->
 
-        
-        
-        
-        
         <!-- end of every page - watermark and social media --->
             <img id = "watermark" src = "img/watermark.png">
             <div id = "socialmedia">
                 <a href = "https://www.facebook.com/profile.php?id=100087718065481" class = "fa fa-facebook"> <br>  facebook  </a>
                 <a href = "https://www.instagram.com/kczphotographybykaleigh/" class = "fa fa-instagram"> <br>   instagram   </a>
             </div>
+        
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     </body>
 </html>
