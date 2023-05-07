@@ -9,7 +9,7 @@
 
 .navbar-nav
 {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Urbanist', sans-serif;
     margin-left: auto;
 }
@@ -20,6 +20,8 @@
 }
 .dropdown-menu
 {
+        font-size: 20px;
+
     background-color:rgb(217, 161, 135);
     z-index:9999;
     
@@ -33,7 +35,6 @@
     color: white;
     padding: 1em;
 }
-
 
 
 html    {background-color: rgb(241, 239, 233);}
@@ -69,9 +70,9 @@ p
     margin-right: auto;
     margin-left: auto;
     color:rgb(147, 71, 44);
-    font-size: 500%;
     padding: .2em;
-    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 380%;
+    font-family:'Amatic SC', cursive;
 }
 #booking_button:hover
 {
@@ -87,12 +88,12 @@ p
     margin-right: auto;
     margin-left: auto;
 }
+
 #banner
 {
     width: 18%;
     padding: .66em;   
 }
-
 
 #socialmedia 
 {
@@ -124,18 +125,81 @@ p
 .KCZPHOTOGRAPHY
 {
     font-family: 'Urbanist', sans-serif;
-    font-size: 300%;
+    font-size: 400%;
     display:block;
     color: rgb(147, 71, 44);
     padding-bottom: 10px;
    
 }
 
+.home_paragraph     
+{
+    margin: auto;
+    width: 80%;
+}
+
+#home_paragraph1
+{
+    width: 100%;
+    text-align: center;
+    font-size: 700%;
+    font-family: 'Qwitcher Grypen', cursive;
+    color:rgb(147, 71, 44);
+    line-height: 1;
+    padding: 5px;
+}
+#home_paragraph2
+{
+    text-align: center;
+    display: block;
+    font-size: 200%;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 2;
+    padding-top:5%;
+}
+
+.button_banner
+{
+    display: flex;
+    width: 100%;
+}
+#home_button1
+{
+    padding-left: 10%;
+    border: none;
+    background-color: rgb(241, 239, 233);
+    color:rgb(147, 71, 44);
+    font-size: 380%;
+    font-family:'Amatic SC', cursive;
+}
+#home_button2
+{
+    border: none;
+    background-color: rgb(241, 239, 233);
+    color:rgb(147, 71, 44);
+    font-size: 380%;
+    font-family:'Amatic SC', cursive;
+}
+#home_button1:hover
+{
+    border-color: rgb(147, 71, 44);
+    border: dotted;
+    border-radius: 30px;
+}
+#home_button2:hover
+{
+    border-color: rgb(147, 71, 44);
+    border: dotted;
+    border-radius: 30px;
+}
+
+
+
 /*THE PHOTOGRAPHER*/
 
-.paragraph
+.photographer_paragraph
 {
-    width: 45%;
+    width: 40%;
     margin-top: 5%;
     margin-bottom: 10%;
     margin-right: auto;
@@ -147,43 +211,55 @@ p
 {
     width: 100%;
     text-align: left;
-    font-size: 280%;
+    font-size: 380%;
     font-family:'Amatic SC', cursive;
     line-height: 1;
     padding: 5px;
 }
 #intro_2
 {
-    text-align: right;
+    text-align: center;
     padding: 5px;
     width: 100%;
     display: block;
-    font-size: 950%;
+    font-size: 1300%;
     font-family: 'Qwitcher Grypen', cursive;
     color: rgb(147, 71, 44);
     line-height: 1;
 }
+
 #intro_3
 {
-    text-align: left;
+    text-align: center;
     display: block;
-    font-size: 150%;
+    font-size: 180%;
     font-family: 'Urbanist', sans-serif;
     line-height: 2;
-    padding-top: 5px;
+    padding-top:5%;
 }
-
+#intro_4
+{
+    font-weight: 500;
+    float: right;
+    text-align: right;
+    display: block;
+    width: 50%;
+    font-size: 280%;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 2;
+    padding-top:5%;
+}
 
 .photographer_carousel 
 {
     margin-right: 5%;
-    margin-top: 25%;
+    margin-left: 10%;
     margin-bottom: 10%;
     width: 40%;
     float: right;
     display: block;
 }
-.photographer_carousel img  {width: 100%;}
+.photographer_carousel img  {width: 80%;}
 
 .photographer_facts
 {
@@ -194,6 +270,7 @@ p
 }
 .photographer_facts ul 
 {
+    width: 80%;
     text-align: center;
     background-color:rgb(217, 161, 135);
     color: white;
@@ -208,10 +285,8 @@ p
     padding-right:20px;
     padding-left:20px;
     font-family: 'Amatic SC', cursive;
-    font-size: 300%;
+    font-size: 350%;
 }
-
-
 
 /* Hide the images by default */
 .mySlides {
@@ -226,37 +301,35 @@ p
 
 
 /* PRICING*/
-#pricing_background
+.background-container
 {
-    background-image: url(img/carousel_background.jpg);
+    margin: 2%;
+    background-image: url(img/IMG_0200.JPG);
     background-size: cover;
     background-repeat: no-repeat;
 }
-#pricing_carousel 
+.container      {width: 60%;}
+.card           {margin: 8%;}
+.card-header
 {
-    padding: 2em;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 220%;
+    font-weight: 500;
 }
-
-#carousel-inner-pricing
+.card-title 
 {
-    width:60%;
-    transition: 0.6s;
-    margin:auto;
+    font-family: 'Qwitcher Grypen', cursive;
+    color: rgb(147, 71, 44);
+    font-size: 300%;
 }
-
-.carousel-control-next-icon, .carousel-control-prev-icon    {padding: 2em;}
-
-
-.carousel-indicators 
+.card-subtitle      {font-family: 'Urbanist', sans-serif;}
+.card-body
 {
-    margin:auto;
-    background-color:rgb(217, 161, 135);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 140%;
 }
+.card-pricing       {font-weight: bold;}
 
-.carousel-indicators .active
-{
-    background-color: $carousel-indicator-active-bg;
-}
 
 
 /* BOOKING Page */
@@ -333,9 +406,9 @@ fieldset input
     margin-right: auto;
     margin-left: auto;
     color:rgb(147, 71, 44);
-    font-size: 300%;
     padding: .25em;
-    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 200%;
+    font-family:'Amatic SC', cursive;
 }
 #sendmessage:hover
 {
@@ -363,49 +436,53 @@ fieldset input
 /* SMALL*/
 @media only screen and (max-width: 767px)
 {
-    p   {font-size: 80%;}
+    .navbar-nav, .dropdown-menu     {font-size: 15px;}
+    p                               {font-size: 100%;}
     
     .headertext
     {
         position: block;
         font-size: 250%;
         top: 25%;
-    
     }
-    #booking_button {font-size: 250%;}
-    #socialmedia
-    {
-        font-size: 10%;
-    }
+    #booking_button         {font-size: 250%;}
+    #socialmedia            {font-size: 100%;}
     
     .KCZPHOTOGRAPHY
     {
-        font-size: 130%;  
+        font-size: 170%;  
         top: 28%;
     }
     
+    #home_paragraph1      {font-size: 300%;}
+    #home_paragraph2      {font-size: 100%;}
    
+    #home_button1, #home_button2 
+    {
+        font-size: 200%;
+        display: block;
+        width: 100%;
+    }
     /* THE PHOTOGRAPHER*/
-    .paragraph
+    .photographer_paragraph
     {
         width: 100%;
         padding: 1em;
         margin-right:auto; 
         margin-left: auto;
         display: block;
+        margin-bottom: 0;
+
     }
-   .photographer_carousel
+   .photographer_carousel 
     {
-        float: none;
         width: 80%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
     }
+
     
-    .carousel-control-next-icon, .carousel-control-prev-icon    {padding: 1em;}
-    
-   
     #intro_1    
     {   
         font-size: 160%;
@@ -416,22 +493,26 @@ fieldset input
         font-size: 500%;
         text-align: center;
     }
-    #intro_3    
+    #intro_3   
     {   
         font-size: 90%;
         text-align: center;
+    }
+    #intro_4 
+    {
+        font-weight: 500;
+        font-size: 120%;
+        text-align: center;
+        width: 100%;
+        display: inherit;
     }
     
     .photographer_facts
     {
         width: 60%;
-        
         display: flex;
     }
-    .photographer_facts ul
-    {
-        padding: .5em;
-    }
+    .photographer_facts ul      {padding: .5em;}
     .photographer_facts ul li
     {
         padding: .2em;
@@ -495,6 +576,23 @@ fieldset input
         margin-left: auto;
     }
     
-    
-
-   
+    .container      {width: 80%;}
+    .card           {margin: 4%;}
+    .card-header
+    {
+        font-size: 150%;
+    }
+    .card-title 
+    {
+        font-size: 300%;
+    }
+    .card-subtitle      {font-size:80%;}
+    .card-body
+    {
+        font-size: 100%;
+    }
+    .card-pricing       
+    {
+        font-size: 120%;
+        font-weight: bold;
+    }
