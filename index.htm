@@ -15,11 +15,11 @@ Author: Kaleigh Ziglar
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 
 
         <link rel="stylesheet" href="stylesheet.css">
-        
         
         <!-- adding in Google fonts--->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@ Author: Kaleigh Ziglar
         <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Urbanist:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Urbanist:wght@200&display=swap" rel="stylesheet">
+
 
         <!-- adding in social media icons--->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,7 +42,7 @@ Author: Kaleigh Ziglar
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav justify-content-between w-100">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.htm">HOME</a>
+                  <a class="nav-link " aria-current="page" href="index.htm">HOME</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="thephotographer.htm">THE PHOTOGRAPHER</a>
@@ -73,17 +74,23 @@ Author: Kaleigh Ziglar
             <div class = "headertext" id="welcometo"> welcome to</div>
             <div class = "KCZPHOTOGRAPHY"> KCZ   PHOTOGRAPHY</div><br>
             <img src = "img/header/index_image.jpg" style="width:100%;">
+        </div><br><br>  
+        
+        <div class = "home_paragraph">
+                <p id ="home_paragraph1"> I am so glad you are here!</p>
+                <p id ="home_paragraph2">If you are looking for a photographer who does a little bit of everything, you have found her! Since I have recently taken on photography, I have been challenging myself to try any and all kinds of photography until I find my niche. In the meantime, I will be more than happy to help you capture all of your most cherished moments. I will do everything in my power to make sure you get exactly what you want and have fun while doing it! Getting photos done is all part of the experience and will leave you with memories that will last a lifetime!</p>
+            </div>
+       
+        <div class = "button_banner justify-content-between w-100">
+            <button id="home_button1" type="submit" onclick= "document.location.href= 'booking.htm';">  more about the photographer >></button><br>
+            <button id="home_button2" type="submit" onclick= "document.location.href= 'booking.htm';"> get in touch >></button><br>
         </div>
-        
-        
-         <button id="booking_button" type="submit" onclick= "document.location.href= 'booking.htm';"> get in touch !</button>
-
             <div class = "photo_banner justify-content-between w-100">
-                <img id = "banner" src = "img/banner/banner1.jpg" >
-                <img id = "banner" src = "img/banner/banner2.JPEG" >
-                <img id = "banner" src = "img/banner/banner3.jpg" >
-                <img id = "banner" src = "img/banner/banner4.jpg" >
-                <img id = "banner" src = "img/banner/banner5.jpg">
+                <img id = "banner" src = "img/banner/banner1.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner2.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner3.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner4.jpg" style="width:20%;">
+                <img id = "banner" src = "img/banner/banner5.jpg" style="width:20%;">
             </div>
         
              <!-- end of every page - watermark and social media --->
@@ -92,6 +99,10 @@ Author: Kaleigh Ziglar
                 <a href = "https://www.facebook.com/profile.php?id=100087718065481" class = "fa fa-facebook"> <br>  facebook  </a>
                 <a href = "https://www.instagram.com/kczphotographybykaleigh/" class = "fa fa-instagram"> <br>   instagram   </a>
             </div>
+        
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>       
+
     </body>
 </html>
 
