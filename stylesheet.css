@@ -163,7 +163,6 @@ p
     display: flex;
     width: 100%;
     margin: 3%;
-
 }
 #home_button1
 {
@@ -252,7 +251,7 @@ p
     padding-top:5%;
 }
 
-.photographer_carousel 
+#photographer_carousel 
 {
     margin-right: 5%;
     margin-left: 10%;
@@ -261,7 +260,7 @@ p
     float: right;
     display: block;
 }
-.photographer_carousel img  {width: 80%;}
+#photographer_carousel img  {width: 80%;}
 
 .photographer_facts
 {
@@ -476,7 +475,7 @@ fieldset input
         margin-bottom: 0;
 
     }
-   .photographer_carousel 
+   #photographer_carousel 
     {
         width: 80%;
         display: flex;
@@ -598,3 +597,8 @@ fieldset input
         font-size: 120%;
         font-weight: bold;
     }
+
+
+    
+
+   
